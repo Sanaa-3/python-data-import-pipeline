@@ -1,2 +1,10 @@
 # python-data-import-pipeline
-An Assignment. 
+Overview
+
+How to Run
+
+Assumptions & Decisions
+
+QA Checks
+
+AI Usage Statement
