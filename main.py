@@ -30,13 +30,16 @@ def completeness_score(df):
     #counts how many non-missing cells exist per row
     return cleaned.notna().sum(axis=1)
 
+#Converts a date/datetime to ISO 8601 format string; returns empty string if invalid
 def to_iso_datetime(x):
     dt = pd.to_datetime(x, errors="coerce")
     if pd.isna(dt):
         return ""
     return dt.strftime("%Y-%m-%dT%H:%M:%S")
 
-
+#Deduplicates constituents based on Patron ID, keeping the “best” row per ID
+#“Best” is defined as the row with the highest completeness score (most non-missing
+#fields). Ties are broken by most recent Date Entered.
 def dedupe_constituents(df):
     df = df.copy()
     df["Patron ID"] = df["Patron ID"].astype(str)
@@ -73,6 +76,7 @@ def split_tags(tag_str):
             out.append(t)
     return out
 
+#Fetches tag mapping from external API
 def fetch_tag_mapping():
     """
     Returns dict: original_tag -> mapped_tag
@@ -95,6 +99,7 @@ def fetch_tag_mapping():
         print(f"WARNING: Tag mapping API failed ({e}); using identity mapping.")
         return {}
 
+#Applies tag mapping to a list of tags, then dedupes the result
 def map_tags(tag_list, mapping):
     """
     Applies mapping to each tag, then dedupes again (important if two tags map to same final tag).
@@ -109,6 +114,7 @@ def map_tags(tag_list, mapping):
             out.append(t)
     return out
 
+#Formats a number as currency string (e.g., 1234.5 -> "$1234.50")
 def to_currency(x):
     return f"${float(x):.2f}" if pd.notna(x) else ""
 
@@ -122,8 +128,16 @@ def main():
     constituents = pd.read_excel(INPUT_PATH, sheet_name="Input Constituents")
     emails = pd.read_excel(INPUT_PATH, sheet_name="Input Emails")
 
+    print("1089 in raw input:",
+        (constituents["Patron ID"].astype(str) == "1089").any())
+
     # # 2) Clean/dedupe constituents
     constituents = dedupe_constituents(constituents)
+
+    print("1089 after dedupe:",
+      (constituents["Patron ID"].astype(str) == "1089").any())
+
+
     constituents["Patron ID"] = constituents["Patron ID"].astype(str).str.strip()
     constituents = constituents.set_index("Patron ID")
 
@@ -230,7 +244,9 @@ def main():
 
     # CB Constituent Type 
     company = constituents["Company"].fillna("").astype(str).str.strip()
-    is_company = (company != "") & (~company.str.lower().isin(["none", "nan", "n/a"]))
+    bad_company_values = ["none", "nan", "n/a", "...", "null"]
+    is_company = (company != "") & (~company.str.lower().isin(bad_company_values))
+
     constituents["CB Constituent Type"] = np.where(is_company, "Company", "Person")
 
 
@@ -279,6 +295,7 @@ def main():
 
         return "; ".join(parts)
 
+
     constituents["CB Background Information"] = constituents.apply(build_background_info, axis=1)
 
     # 7) Final CSV output
@@ -299,9 +316,17 @@ def main():
         "CB Most Recent Donation Amount": constituents["CB Most Recent Donation Amount"],
     })
 
+    print(
+        "1089 in final_constituents:",
+        (final_constituents["CB Constituent ID"].astype(str) == "1089").any()
+    )
+
     final_constituents.to_csv(out_cons, index=False)
     print(f"Wrote {out_cons}")
 
+    out_path = f"{OUTPUT_DIR}/cuebox_constituents.csv"
+    df_check = pd.read_csv(out_path, dtype=str)
+    print("1089 in saved CSV:", (df_check["CB Constituent ID"] == "1089").any())
 
 
 
