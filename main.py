@@ -2,12 +2,16 @@ import pandas as pd
 import numpy as np
 import re
 import os
+import requests
 
 INPUT_PATH = "data/input.xlsx"
 OUTPUT_DIR = "data/output"
 
 # Regular expression for validating email addresses
 EMAIL_REGEX = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+
+#
+TAG_MAPPING_API = "https://6719768f7fc4c5ff8f4d84f1.mockapi.io/api/v1/tags"
 
 #Functtion to clean and standardize string values
 #converts NaN/None to empty string
@@ -45,6 +49,61 @@ def dedupe_constituents(df):
 #filters out things that obviously aren’t emails. (which is all of them in this case according to the regex)
 def is_valid_email(email):
     return bool(EMAIL_REGEX.match(email))
+
+#Splits a comma-separated tag string into a list of unique, trimmed tags
+def split_tags(tag_str):
+    if pd.isna(tag_str):
+        return []
+    parts = [t.strip() for t in str(tag_str).split(",")]
+    parts = [t for t in parts if t]
+
+    # dedupe while preserving order
+    seen = set()
+    out = []
+    for t in parts:
+        if t not in seen:
+            seen.add(t)
+            out.append(t)
+    return out
+
+
+
+def fetch_tag_mapping():
+    """
+    Returns dict: original_tag -> mapped_tag
+    If API is unavailable, return {} (identity mapping).
+    """
+    try:
+        r = requests.get(TAG_MAPPING_API, timeout=10)
+        if r.status_code != 200:
+            print(f"WARNING: Tag mapping API returned {r.status_code}; using identity mapping.")
+            return {}
+        data = r.json()
+        mapping = {}
+        for item in data:
+            name = as_clean_str(item.get("name"))
+            mapped = as_clean_str(item.get("mapped_name"))
+            if name and mapped:
+                mapping[name] = mapped
+        return mapping
+    except Exception as e:
+        print(f"WARNING: Tag mapping API failed ({e}); using identity mapping.")
+        return {}
+
+def map_tags(tag_list, mapping):
+    """
+    Applies mapping to each tag, then dedupes again (important if two tags map to same final tag).
+    """
+    mapped = [mapping.get(t, t) for t in tag_list]
+    seen = set()
+    out = []
+    for t in mapped:
+        t = as_clean_str(t)
+        if t and t not in seen:
+            seen.add(t)
+            out.append(t)
+    return out
+
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -93,9 +152,43 @@ def main():
         "CB Email 2 (Standardized)": constituents["Email 2"],
     })
 
-    output.to_csv(f"{OUTPUT_DIR}/constituents_step2.csv", index=False)
+    constituents["Clean Tags"] = constituents["Tags"].apply(split_tags)
 
-    print("Checkpoint 2 complete: constituents_step2.csv written")
+    #print(constituents[["Patron ID", "Tags", "Clean Tags"]].head(10))
+
+    #output.to_csv(f"{OUTPUT_DIR}/constituents_step2.csv", index=False)
+    #print("Checkpoint 2 complete: constituents_step2.csv written")
+
+
+
+    # mapped tags + tag count output 
+    tag_mapping = fetch_tag_mapping()
+
+    constituents["Mapped Tags"] = constituents["Clean Tags"].apply(lambda tags: map_tags(tags, tag_mapping))
+
+    # Create (Patron ID, Tag) rows
+    exploded = constituents[["Patron ID", "Mapped Tags"]].explode("Mapped Tags")
+    exploded = exploded.rename(columns={"Mapped Tags": "CB Tag Name"})
+    exploded["CB Tag Name"] = exploded["CB Tag Name"].apply(as_clean_str)
+    exploded = exploded[exploded["CB Tag Name"] != ""]
+
+    # Count unique patrons per tag
+    tag_counts = (
+        exploded.groupby("CB Tag Name")["Patron ID"]
+        .nunique()
+        .reset_index(name="CB Tag Count")
+        .sort_values("CB Tag Name")
+    )
+    donations = pd.read_excel(INPUT_PATH, sheet_name="Input Donation History")
+    print("Donation History columns:", list(donations.columns))
+    print(donations.head(3))
+    print(donations["Status"].value_counts(dropna=False))
+
+
+    #tag_counts.to_csv(f"{OUTPUT_DIR}/tags_step3.csv", index=False)
+   #print("Wrote data/output/tags_step3.csv")
+
+   
 
 if __name__ == "__main__":
     main()
