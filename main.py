@@ -128,15 +128,8 @@ def main():
     constituents = pd.read_excel(INPUT_PATH, sheet_name="Input Constituents")
     emails = pd.read_excel(INPUT_PATH, sheet_name="Input Emails")
 
-    print("1089 in raw input:",
-        (constituents["Patron ID"].astype(str) == "1089").any())
-
     # # 2) Clean/dedupe constituents
     constituents = dedupe_constituents(constituents)
-
-    print("1089 after dedupe:",
-      (constituents["Patron ID"].astype(str) == "1089").any())
-
 
     constituents["Patron ID"] = constituents["Patron ID"].astype(str).str.strip()
     constituents = constituents.set_index("Patron ID")
@@ -316,17 +309,8 @@ def main():
         "CB Most Recent Donation Amount": constituents["CB Most Recent Donation Amount"],
     })
 
-    print(
-        "1089 in final_constituents:",
-        (final_constituents["CB Constituent ID"].astype(str) == "1089").any()
-    )
-
     final_constituents.to_csv(out_cons, index=False)
     print(f"Wrote {out_cons}")
-
-    out_path = f"{OUTPUT_DIR}/cuebox_constituents.csv"
-    df_check = pd.read_csv(out_path, dtype=str)
-    print("1089 in saved CSV:", (df_check["CB Constituent ID"] == "1089").any())
 
 
 
