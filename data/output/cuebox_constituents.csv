@@ -1,100 +1,100 @@
 CB Constituent ID,CB Constituent Type,CB First Name,CB Last Name,CB Company Name,CB Created At,CB Email 1 (Standardized),CB Email 2 (Standardized),CB Title,CB Tags,CB Background Information,CB Lifetime Donation Amount,CB Most Recent Donation Date,CB Most Recent Donation Amount
-1089,Company,,,...,2016-04-16T00:00:00,samantha08@hotmail.com,andrewsrandy@howard.com,Mrs.,"Student Scholar, Summer School 2016, Top Donor",Job Title: Business Analyst; Marital Status: Single,$1550.00,2018-10-07T00:00:00,$500.00
-1102,Person,Michael,Munoz,,2019-06-17T00:00:00,warrendaniel@gmail.com,xwilson@olsen-morgan.org,,"Board Member, Camp 2016, Major Donor 2021",,$5350.00,2023-11-30T00:00:00,$100.00
-1288,Person,Rebecca,Maynard,,2021-06-23T00:00:00,fsteele@hotmail.com,ellendavis@smith.com,Mrs.,"Major Donor 2021, Summer School 2016",Job Title: Data Scientist; Marital Status: Single,$700.00,2023-04-01T00:00:00,$100.00
+1089,Company,,,...,2016-04-16T00:00:00,samantha08@hotmail.com,andrewsrandy@howard.com,Mrs.,"Major Donor, Student Scholar, Summer 2016",Job Title: Business Analyst; Marital Status: Single,$1550.00,2018-10-07T00:00:00,$500.00
+1102,Person,Michael,Munoz,,2019-06-17T00:00:00,warrendaniel@gmail.com,xwilson@olsen-morgan.org,,"Board Member, Major Donor, Summer 2016",,$5350.00,2023-11-30T00:00:00,$100.00
+1288,Person,Rebecca,Maynard,,2021-06-23T00:00:00,fsteele@hotmail.com,ellendavis@smith.com,Mrs.,"Major Donor, Summer 2016",Job Title: Data Scientist; Marital Status: Single,$700.00,2023-04-01T00:00:00,$100.00
 1348,Person,Robert & Emily,Patton,,2016-12-12T00:00:00,thomassamuel@gmaill.com,,,,Marital Status: Single,$3600.00,2023-03-18T00:00:00,$100.00
-1459,Person,Katherine,Jones,,2022-08-06T00:00:00,millersherry@gmaill.com,millernicole@stanley-harris.com,,"Camp 2016, Major Donor 2021, Pitch Perfect Staff, Top Donor",Job Title: Software Engineer; Marital Status: Single,$25000.00,2021-04-28T00:00:00,$10000.00
-1550,Person,Laura,Harrison,,2017-12-07T12:34:00,harrypatterson@yahoo.com,,,"Board Member, Major Donor 2021, Student Scholar",,$20100.00,2024-12-28T00:00:00,$10000.00
+1459,Person,Katherine,Jones,,2022-08-06T00:00:00,millersherry@gmaill.com,millernicole@stanley-harris.com,,"Major Donor, Pitch Perfect, Summer 2016",Job Title: Software Engineer; Marital Status: Single,$25000.00,2021-04-28T00:00:00,$10000.00
+1550,Person,Laura,Harrison,,2017-12-07T12:34:00,harrypatterson@yahoo.com,,,"Board Member, Major Donor, Student Scholar",,$20100.00,2024-12-28T00:00:00,$10000.00
 1825,Company,,,"Villanueva, Bowen and Smith",2016-11-07T00:00:00,javierperez@davis.com,jon30@tate.biz,Mr.,Student Scholar,Marital Status: Single,$11500.00,2021-09-10T00:00:00,$10000.00
-1854,Person,Ricky,David,,2020-08-03T00:00:00,mayertammy@collins-vasquez.org,stephaniewu@gmail.com,Dr.,"Camp 2016, Pitch Perfect Volunteer, Student Scholar, Summer School 2016",Marital Status: Single,$15050.00,2023-02-02T00:00:00,$5000.00
-2014,Person,Amanda,Kelley,,2016-11-10T00:00:00,walkerlindsey@lewis.com,,Mr.,"Board Member, Camp 2016, Pitch Perfect Volunteer, Student Scholar, VIP",,$650.00,2022-03-01T00:00:00,$500.00
-2085,Person,David,Smith,,2015-10-13T00:00:00,smalljessica@hotmail.com,tonyagutierrez@wheeler.com,,"Camp 2016, Pitch Perfect Volunteer, Summer School 2016",Marital Status: Married,$450.00,2021-04-17T00:00:00,$100.00
+1854,Person,Ricky,David,,2020-08-03T00:00:00,mayertammy@collins-vasquez.org,stephaniewu@gmail.com,Dr.,"Pitch Perfect, Student Scholar, Summer 2016",Marital Status: Single,$15050.00,2023-02-02T00:00:00,$5000.00
+2014,Person,Amanda,Kelley,,2016-11-10T00:00:00,walkerlindsey@lewis.com,,Mr.,"Board Member, Pitch Perfect, Student Scholar, Summer 2016, VIP",,$650.00,2022-03-01T00:00:00,$500.00
+2085,Person,David,Smith,,2015-10-13T00:00:00,smalljessica@hotmail.com,tonyagutierrez@wheeler.com,,"Pitch Perfect, Summer 2016",Marital Status: Married,$350.00,2019-03-22T00:00:00,$250.00
 2136,Person,Regina,Webb,,2020-12-19T00:00:00,brittney12@lee-williamson.org,qkoch@gmal.com,Dr.,,Job Title: Marketing Manager; Marital Status: Married,$200.00,2024-05-15T00:00:00,$100.00
-2173,Person,Thomas,Meyers,,,lance98@hotmail.com,,Mr.,"Pitch Perfect Staff, Top Donor",Job Title: Administrative Assistant,$11100.00,2022-12-11T00:00:00,$10000.00
-2382,Person,Mark,Peters,,2018-05-21T00:00:00,,,Mrs.,"Board Member, Major Donor 2021, Pitch Perfect Staff, Pitch Perfect Volunteer",Job Title: IT Consultant; Marital Status: Single,,,
-2433,Person,Dylan And Anna,Adams,,,shelby30@olsen-oliver.com,johnbrown@gmail.com,,"Board Member, Major Donor 2021, Pitch Perfect Staff, Student Scholar",Job Title: Software Engineer,$14000.00,2021-12-06T00:00:00,$1000.00
-2481,Person,James,Trujillo,,2024-06-23T00:00:00,carrie32@forbes.com,donald21@houston.com,,"Pitch Perfect Staff, VIP",Job Title: Administrative Assistant; Marital Status: Single,$10600.00,2022-01-05T00:00:00,$10000.00
-2581,Person,Lori,Cummings,,2018-11-20T00:00:00,alyssagarcia@gmail.com,steven65@jackson.com,,,Job Title: Chief Technology Officer,$10350.00,2024-09-27T00:00:00,$10000.00
+2173,Person,THOMAS,MEYERS,,,lance98@hotmail.com,,Mr.,"Major Donor, Pitch Perfect",Job Title: Administrative Assistant,$11100.00,2022-12-11T00:00:00,$10000.00
+2382,Person,Mark,Peters,,2018-05-21T00:00:00,,,Mrs.,"Board Member, Major Donor, Pitch Perfect",Job Title: IT Consultant; Marital Status: Single,,,
+2433,Person,Dylan and Anna,Adams,,,shelby30@olsen-oliver.com,johnbrown@gmail.com,,"Board Member, Major Donor, Pitch Perfect, Student Scholar",Job Title: Software Engineer,$14000.00,2021-12-06T00:00:00,$1000.00
+2481,Person,James,Trujillo,,2024-06-23T00:00:00,carrie32@forbes.com,donald21@houston.com,,"Pitch Perfect, VIP",Job Title: Administrative Assistant; Marital Status: Single,$10600.00,2022-01-05T00:00:00,$10000.00
+2581,Person,Lori,Cummings,,2018-11-20T00:00:00,alyssagarcia@gmail.com,steven65@jackson.com,,,Job Title: Chief Technology Officer,$10100.00,2024-09-27T00:00:00,$10000.00
 2596,Person,Shelia,Yates,,2015-08-31T00:00:00,,,Mrs.,"Major Donor 2022, Student Scholar",Job Title: Administrative Assistant,,,
-2686,Person,Jason,Kramer,,2023-06-13T00:00:00,oarmstrong@gmail.com,,Dr.,"Board Member, Camp 2016, Major Donor 2021",,,,
-2737,Person,Matthew,Nicholson,,2015-05-28T00:00:00,,,Dr.,"Camp 2016, Major Donor 2021, Summer School 2016",,$6000.00,2023-08-08T00:00:00,$5000.00
-2798,Person,Jessica,Sheppard,,2019-08-20T00:00:00,tarasanchez@robinson.com,cgreen@hotmail.com,Mr.,"Summer School 2016, Top Donor",Job Title: Graphic Designer; Marital Status: Married,,,
-2936,Person,Natalie,Smith,,2016-11-10T00:00:00,lawrence72@olson.com,tsuarez@ford.net,Dr.,"Pitch Perfect Volunteer, Top Donor",,$11100.00,2023-03-04T00:00:00,$100.00
+2686,Person,Jason,Kramer,,2023-06-13T00:00:00,oarmstrong@gmail.com,,Dr.,"Board Member, Major Donor, Summer 2016",,,,
+2737,Person,Matthew,Nicholson,,2015-05-28T00:00:00,,,Dr.,"Major Donor, Summer 2016",,$6000.00,2023-08-08T00:00:00,$5000.00
+2798,Person,Jessica,Sheppard,,2019-08-20T00:00:00,tarasanchez@robinson.com,cgreen@hotmail.com,Mr.,"Major Donor, Summer 2016",Job Title: Graphic Designer; Marital Status: Married,,,
+2936,Person,Natalie,Smith,,2016-11-10T00:00:00,lawrence72@olson.com,tsuarez@ford.net,Dr.,"Major Donor, Pitch Perfect",,$11100.00,2023-03-04T00:00:00,$100.00
 2976,Person,,,,2022-05-25T00:00:00,ssanders@hotmail.com,,,,,$4000.00,2024-03-17T00:00:00,$3000.00
-3054,Person,Cody,Wright,,2022-08-05T00:00:00,yjohns@bass.com,,Dr.,"Board Member, Top Donor",,,,
-3140,Person,Claudia,Chambers,,2023-09-11T00:00:00,bday@odom-archer.com,,,Pitch Perfect Volunteer,Marital Status: Single,$5000.00,2023-06-10T00:00:00,$3000.00
-3141,Person,Jennifer,Juarez,,2022-01-30T00:00:00,xhubbard@garcia.biz,simpsonluis@williams.com,,Student Scholar,Marital Status: Married,$10150.00,2022-12-08T00:00:00,$10000.00
-3194,Person,David,Villanueva,,2022-12-16T00:00:00,collierdiana@ortiz.com,,,"Camp 2016, Pitch Perfect Volunteer, Student Scholar",Job Title: Marketing Manager,$5050.00,2020-03-23T00:00:00,$5000.00
-3203,Person,Joshua,Gonzales,,2022-11-10T00:00:00,katiecarr@daniels-olsen.com,,,"Board Member, Camp 2016, Pitch Perfect Staff, Top Donor",Job Title: Business Analyst; Marital Status: Single,$11000.00,2020-09-25T00:00:00,$5000.00
-3240,Company,,,Davis-Anthony,2018-03-09T00:00:00,hartjames@hotmail.com,hhoward@silva.org,,Pitch Perfect Staff,Job Title: Nurse Practitioner,$2000.00,2020-09-16T00:00:00,$1000.00
-3434,Person,Anne,Martinez,,2018-05-23T00:00:00,alejandro66@patrick-curry.biz,mooresusan@yaho.com,Dr.,"Board Member, Major Donor 2021, Top Donor",Job Title: Financial Analyst; Marital Status: Single,$1500.00,2021-08-02T00:00:00,$1000.00
-3446,Person,Wanda And James,Bryant,,2015-07-16T00:00:00,,,,Top Donor,,$200.00,2023-09-28T00:00:00,$100.00
-3506,Person,Jason,Moore,,2015-03-27T00:00:00,traciemcpherson@palmer.com,,,,,$5500.00,2023-02-15T00:00:00,$5000.00
-3514,Person,Kevin,Howard,,2015-11-07T00:00:00,christopher25@rodriguez.com,plam@hotmail.com,Mrs.,"Major Donor 2021, Pitch Perfect Staff, Summer School 2016",,$10500.00,2024-07-06T00:00:00,$250.00
+3054,Person,cody,WRIGHT,,2022-08-05T00:00:00,yjohns@bass.com,,Dr.,"Board Member, Major Donor",,,,
+3140,Person,Claudia,Chambers,,2023-09-11T00:00:00,bday@odom-archer.com,,,Pitch Perfect,Marital Status: Single,$5000.00,2023-06-10T00:00:00,$3000.00
+3141,Person,jennifer,JUAREZ,,2022-01-30T00:00:00,xhubbard@garcia.biz,simpsonluis@williams.com,,Student Scholar,Marital Status: Married,$10150.00,2022-12-08T00:00:00,$10000.00
+3194,Person,David,Villanueva,,2022-12-16T00:00:00,collierdiana@ortiz.com,,,"Pitch Perfect, Student Scholar, Summer 2016",Job Title: Marketing Manager,$5050.00,2020-03-23T00:00:00,$5000.00
+3203,Person,Joshua,Gonzales,,2022-11-10T00:00:00,katiecarr@daniels-olsen.com,,,"Board Member, Major Donor, Pitch Perfect, Summer 2016",Job Title: Business Analyst; Marital Status: Single,$11000.00,2020-09-25T00:00:00,$5000.00
+3240,Company,,,Davis-Anthony,2018-03-09T00:00:00,hartjames@hotmail.com,hhoward@silva.org,,Pitch Perfect,Job Title: Nurse Practitioner,$2000.00,2020-09-16T00:00:00,$1000.00
+3434,Person,Anne,Martinez,,2018-05-23T00:00:00,alejandro66@patrick-curry.biz,mooresusan@yaho.com,Dr.,"Board Member, Major Donor",Job Title: Financial Analyst; Marital Status: Single,$1500.00,2021-08-02T00:00:00,$1000.00
+3446,Person,Wanda and James,Bryant,,2015-07-16T00:00:00,,,,Major Donor,,$200.00,2023-09-28T00:00:00,$100.00
+3506,Company,,,Used to work here.,2015-03-27T00:00:00,traciemcpherson@palmer.com,,,,,$5500.00,2023-02-15T00:00:00,$5000.00
+3514,Person,Kevin,Howard,,2015-11-07T00:00:00,christopher25@rodriguez.com,plam@hotmail.com,Mrs.,"Major Donor, Pitch Perfect, Summer 2016",,$10500.00,2024-07-06T00:00:00,$250.00
 3561,Person,,,,2020-12-14T00:00:00,campbellchristina@yahoo.com,fishermaureen@walsh-davis.info,,,,$10000.00,2021-08-07T00:00:00,$10000.00
-3660,Company,,,Vaughn LLC,2018-03-20T00:00:00,wcochran@hotmail.com,mckeeeric@ellis.com,,Summer School 2016,Marital Status: Married,,,
-3677,Company,,,duncan group,2015-04-14T00:00:00,april70@hernandez.biz,brownjames@harris-orozco.info,,"Pitch Perfect Staff, Pitch Perfect Volunteer, Student Scholar, Summer School 2016",Marital Status: Single,$13050.00,2022-06-01T00:00:00,$3000.00
-3927,Company,,,Allen-Stephens,2018-01-04T00:00:00,charles63@ramos.com,doughertyjesse@gmaill.com,,"Camp 2016, Major Donor 2021, Top Donor",Job Title: Administrative Assistant; Marital Status: Married,$5750.00,2024-07-26T00:00:00,$5000.00
-3953,Person,Kelly,Jimenez,,2018-02-16T00:00:00,greg46@hotmail.com,gregoryschmidt@outlok.com,,"Pitch Perfect Volunteer, Student Scholar, Top Donor",Marital Status: Single,$10750.00,2024-05-04T00:00:00,$250.00
-3973,Person,Kyle,Parsons,,2021-09-01T00:00:00,kaylaprice@york-vance.com,,Dr.,"Camp 2016, Pitch Perfect Volunteer, Student Scholar, Summer School 2016",Marital Status: Married,$5150.00,2024-01-28T00:00:00,$50.00
-4036,Company,,,"Guerrero, Diaz and Odom",2018-11-27T00:00:00,,,Mr.,"Camp 2016, Pitch Perfect Volunteer, Student Scholar, Summer School 2016, Top Donor",Job Title: IT Consultant; Marital Status: Single,$15000.00,2020-12-08T00:00:00,$10000.00
-4039,Person,Hannah,Clark,,2022-11-14T00:00:00,emilylopez@yahoo.com,brandy72@mcguire.net,,"Camp 2016, Pitch Perfect Volunteer, Top Donor",Job Title: Operations Manager,$1250.00,2021-06-09T00:00:00,$250.00
-4051,Person,Julia,Spencer,,2024-01-28T00:00:00,william10@hotmail.com,barrettsean@yahoo.com,Mr.,"Major Donor 2021, Top Donor",Job Title: Accountant; Marital Status: Married,$4050.00,2024-09-05T00:00:00,$50.00
+3660,Company,,,Vaughn LLC,2018-03-20T00:00:00,wcochran@hotmail.com,mckeeeric@ellis.com,,Summer 2016,Marital Status: Married,,,
+3677,Company,,,duncan group,2015-04-14T00:00:00,april70@hernandez.biz,brownjames@harris-orozco.info,,"Pitch Perfect, Student Scholar, Summer 2016",Marital Status: Single,$13050.00,2022-06-01T00:00:00,$3000.00
+3927,Company,,,Allen-Stephens,2018-01-04T00:00:00,charles63@ramos.com,doughertyjesse@gmaill.com,,"Major Donor, Summer 2016",Job Title: Administrative Assistant; Marital Status: Married,$5750.00,2024-07-26T00:00:00,$5000.00
+3953,Person,Kelly,Jimenez,,2018-02-16T00:00:00,greg46@hotmail.com,gregoryschmidt@outlok.com,,"Major Donor, Pitch Perfect, Student Scholar",Marital Status: Single,$10750.00,2024-05-04T00:00:00,$250.00
+3973,Person,Kyle,Parsons,,2021-09-01T00:00:00,kaylaprice@york-vance.com,,Dr.,"Pitch Perfect, Student Scholar, Summer 2016",Marital Status: Married,$5150.00,2024-01-28T00:00:00,$50.00
+4036,Company,,,"Guerrero, Diaz and Odom",2018-11-27T00:00:00,,,Mr.,"Major Donor, Pitch Perfect, Student Scholar, Summer 2016",Job Title: IT Consultant; Marital Status: Single,$15000.00,2020-12-08T00:00:00,$10000.00
+4039,Person,Hannah,Clark,,2022-11-14T00:00:00,emilylopez@yahoo.com,brandy72@mcguire.net,,"Major Donor, Pitch Perfect, Summer 2016",Job Title: Operations Manager,$1250.00,2021-06-09T00:00:00,$250.00
+4051,Person,Julia,Spencer,,2024-01-28T00:00:00,william10@hotmail.com,barrettsean@yahoo.com,Mr.,Major Donor,Job Title: Accountant; Marital Status: Married,$4050.00,2024-09-05T00:00:00,$50.00
 4107,Person,Robert,Powers,,2023-02-26T00:00:00,cooleyaustin@solis.com,,Dr.,,Job Title: Administrative Assistant; Marital Status: Married,$5350.00,2021-08-02T00:00:00,$250.00
-4348,Company,,,Ramos PLC,2015-11-27T00:00:00,cmarshall@hobbs.net,,,"Student Scholar, Summer School 2016, Top Donor",,$4000.00,2020-08-20T00:00:00,$3000.00
-4526,Person,Kaylee,Wagner,,,reeveslinda@underwood.com,,Dr.,"Camp 2016, Major Donor 2021, Pitch Perfect Staff, Student Scholar",,$400.00,2024-06-14T00:00:00,$100.00
-4566,Company,,,"Banks, Watkins and Gomez",2018-12-09T00:00:00,cynthiarogers@moore.info,,,"Board Member, Major Donor 2021, Top Donor",Job Title: Chief Technology Officer; Marital Status: Single,$11000.00,2023-02-06T00:00:00,$500.00
+4348,Company,,,Ramos PLC,2015-11-27T00:00:00,cmarshall@hobbs.net,,,"Major Donor, Student Scholar, Summer 2016",,$4000.00,2020-08-20T00:00:00,$3000.00
+4526,Person,Kaylee,Wagner,,,reeveslinda@underwood.com,,Dr.,"Major Donor, Pitch Perfect, Student Scholar, Summer 2016",,$400.00,2024-06-14T00:00:00,$100.00
+4566,Company,,,"Banks, Watkins and Gomez",2018-12-09T00:00:00,cynthiarogers@moore.info,,,"Board Member, Major Donor",Job Title: Chief Technology Officer; Marital Status: Single,$11000.00,2023-02-06T00:00:00,$500.00
 4615,Person,Laura,Jackson,,2022-07-22T00:00:00,,,,,Marital Status: Single,$10250.00,2023-10-29T00:00:00,$5000.00
-4646,Person,Jon,Hunter,,2019-01-30T00:00:00,edward64@hotmail.com,watsonzachary@gonzalez-ochoa.com,Mr.,"Camp 2016, Pitch Perfect Volunteer, Student Scholar, Summer School 2016",Job Title: Nurse Practitioner; Marital Status: Single,,,
-4651,Person,Julie,Davis,,2015-03-12T00:00:00,,,Mrs.,"Camp 2016, Pitch Perfect Staff, Tag Test",Job Title: Sales Executive; Marital Status: Single,$8100.00,2022-01-07T00:00:00,$100.00
-4668,Person,Cole,White,,2024-02-28T00:00:00,ereese@hotmail.com,powellrebecca@powell.biz,Dr.,"Pitch Perfect Staff, Pitch Perfect Volunteer, Tag Test, Top Donor",Job Title: Project Manager; Marital Status: Married,$13000.00,2021-10-07T00:00:00,$3000.00
-4862,Person,Cynthia,Mckinney,,2021-10-27T00:00:00,dwood@martinez.com,robynmooney@hotmail.com,,"Camp 2016, Major Donor 2021, Pitch Perfect Staff",Job Title: HR Coordinator; Marital Status: Married,$3600.00,2024-06-12T00:00:00,$500.00
+4646,Person,Jon,Hunter,,2019-01-30T00:00:00,edward64@hotmail.com,watsonzachary@gonzalez-ochoa.com,Mr.,"Pitch Perfect, Student Scholar, Summer 2016",Job Title: Nurse Practitioner; Marital Status: Single,,,
+4651,Person,Julie,Davis,,2015-03-12T00:00:00,,,Mrs.,"Pitch Perfect, Summer 2016, Tag Test",Job Title: Sales Executive; Marital Status: Single,$8100.00,2022-01-07T00:00:00,$100.00
+4668,Person,Cole,White,,2024-02-28T00:00:00,ereese@hotmail.com,powellrebecca@powell.biz,Dr.,"Major Donor, Pitch Perfect, Tag Test",Job Title: Project Manager; Marital Status: Married,$13000.00,2021-10-07T00:00:00,$3000.00
+4862,Person,Cynthia,Mckinney,,2021-10-27T00:00:00,dwood@martinez.com,robynmooney@hotmail.com,,"Major Donor, Pitch Perfect, Summer 2016",Job Title: HR Coordinator; Marital Status: Married,$3600.00,2024-06-12T00:00:00,$500.00
 4926,Person,Joshua,Rush,,2018-03-20T00:00:00,,,,,,$10600.00,2020-04-17T00:00:00,$100.00
-4944,Person,Christopher,Schneider,,2023-04-14T00:00:00,gdickerson@gmal.com,,,"Board Member, Camp 2016",Job Title: Marketing Manager; Marital Status: Married,,,
-5032,Company,,,Johnson-Mills,2018-03-21T00:00:00,simpsondouglas@ortiz-miles.net,allen24@yahoo.com,,"Major Donor 2021, Major Donor 2022, Pitch Perfect Staff, Top Donor",,$3050.00,2021-12-13T00:00:00,$50.00
-5034,Company,,,Lawrence LLC,2017-07-02T00:00:00,,,Mr.,"Pitch Perfect Staff, Pitch Perfect Volunteer",,$1500.00,2022-07-25T00:00:00,$250.00
-5049,Person,Robert,Powers,,2017-04-02T00:00:00,sperez@martinez.com,mendezmichelle@joseph-harris.info,Mrs.,"Camp 2016, Pitch Perfect Volunteer, Top Donor",,$3100.00,2024-08-04T00:00:00,$3000.00
-5287,Person,,,,2021-10-30T00:00:00,theodorewilson@blair.com,stephenweeks@barron.com,,"Board Member, Student Scholar, Top Donor",,$9000.00,2023-08-15T00:00:00,$5000.00
-5301,Person,Maureen,Weber,,2021-08-09T00:00:00,corey36@gmail.com,zacharywilliams@hotmail.com,,"Pitch Perfect Staff, Summer School 2016, Top Donor, VIP",Job Title: Business Analyst,$20000.00,2022-12-24T00:00:00,$10000.00
-5321,Company,,,"Cook, Walls and Ryan",2015-12-24T00:00:00,flowersdavid@hotmail.com,kevin68@gmal.com,,,,$5150.00,2021-10-07T00:00:00,$5000.00
-5418,Person,Nicholas,Johnson,,2015-12-21T00:00:00,wustephanie@hotmail.com,,Dr.,"Board Member, Major Donor 2021, Summer School 2016",Marital Status: Married,$11000.00,2021-03-21T00:00:00,$10000.00
-5767,Person,Chase,Pena,,2020-11-20T00:00:00,richard99@hampton.com,,,"Major Donor 2021, Pitch Perfect Volunteer, Tag Test",Job Title: Graphic Designer; Marital Status: Married,$5350.00,2024-12-20T00:00:00,$250.00
-5966,Person,Jared,Burns,,2024-04-24T00:00:00,frazierjanice@gmaill.com,gmartinez@koch.org,Dr.,"Major Donor 2021, Pitch Perfect Staff",Job Title: Administrative Assistant; Marital Status: Single,$13100.00,2024-02-14T00:00:00,$10000.00
+4944,Person,Christopher,Schneider,,2023-04-14T00:00:00,gdickerson@gmal.com,,,"Board Member, Summer 2016",Job Title: Marketing Manager; Marital Status: Married,,,
+5032,Company,,,Johnson-Mills,2018-03-21T00:00:00,simpsondouglas@ortiz-miles.net,allen24@yahoo.com,,"Major Donor, Major Donor 2022, Pitch Perfect",,$3050.00,2021-12-13T00:00:00,$50.00
+5034,Company,,,Lawrence LLC,2017-07-02T00:00:00,,,Mr.,Pitch Perfect,,$1500.00,2022-07-25T00:00:00,$250.00
+5049,Person,Robert,Powers,,2017-04-02T00:00:00,sperez@martinez.com,mendezmichelle@joseph-harris.info,Mrs.,"Major Donor, Pitch Perfect, Summer 2016",,$3100.00,2024-08-04T00:00:00,$3000.00
+5287,Company,,,Retired,2021-10-30T00:00:00,theodorewilson@blair.com,stephenweeks@barron.com,,"Board Member, Major Donor, Student Scholar",,$9000.00,2023-08-15T00:00:00,$5000.00
+5301,Person,Maureen,Weber,,2021-08-09T00:00:00,corey36@gmail.com,zacharywilliams@hotmail.com,,"Major Donor, Pitch Perfect, Summer 2016, VIP",Job Title: Business Analyst,$20000.00,2022-12-24T00:00:00,$10000.00
+5321,Company,,,"Cook, Walls and Ryan",2015-12-24T00:00:00,flowersdavid@hotmail.com,kevin68@gmal.com,,,,$5100.00,2021-10-07T00:00:00,$5000.00
+5418,Person,nicholas,johnson,,2015-12-21T00:00:00,wustephanie@hotmail.com,,Dr.,"Board Member, Major Donor, Summer 2016",Marital Status: Married,$11000.00,2021-03-21T00:00:00,$10000.00
+5767,Person,Chase,Pena,,2020-11-20T00:00:00,richard99@hampton.com,,,"Major Donor, Pitch Perfect, Tag Test",Job Title: Graphic Designer; Marital Status: Married,$5350.00,2024-12-20T00:00:00,$250.00
+5966,Person,Jared,Burns,,2024-04-24T00:00:00,frazierjanice@gmaill.com,gmartinez@koch.org,Dr.,"Major Donor, Pitch Perfect",Job Title: Administrative Assistant; Marital Status: Single,$13100.00,2024-02-14T00:00:00,$10000.00
 5967,Company,,,Paul-Kim,2023-12-30T00:00:00,lisa94@wong.biz,marktorres@yahoo.com,,,Job Title: Chief Technology Officer; Marital Status: Married,$10250.00,2018-07-02T00:00:00,$5000.00
-6020,Person,Katherine & Dan,Johnson,,2015-12-26T00:00:00,,,,"Pitch Perfect Staff, Student Scholar, Top Donor",Job Title: UX Designer,$5000.00,2023-03-01T00:00:00,$5000.00
-6197,Person,Angela,Spencer,,2024-11-27T00:00:00,antoniomalone@gmail.com,xjackson@hotmail.com,Mr.,"Camp 2016, Pitch Perfect Staff, Student Scholar, Tag Test, Top Donor",Marital Status: Married,$200.00,2022-11-04T00:00:00,$50.00
-6339,Person,Allen,Valentine,,2022-10-15T00:00:00,mckaylinda@hotmail.com,,,"Major Donor 2021, Student Scholar",Job Title: Operations Manager; Marital Status: Single,$1500.00,2022-07-24T00:00:00,$1000.00
-6366,Person,Julie,Mcgrath,,2020-09-13T00:00:00,bjones@hotmail.com,xavierwhite@arnold-taylor.net,Mrs.,"Camp 2016, Student Scholar, Top Donor",Job Title: Sales Executive,$6000.00,2023-03-27T00:00:00,$500.00
+6020,Person,Katherine & Dan,Johnson,,2015-12-26T00:00:00,,,,"Major Donor, Pitch Perfect, Student Scholar",Job Title: UX Designer,$5000.00,2023-03-01T00:00:00,$5000.00
+6197,Person,Angela,Spencer,,2024-11-27T00:00:00,antoniomalone@gmail.com,xjackson@hotmail.com,Mr.,"Major Donor, Pitch Perfect, Student Scholar, Summer 2016, Tag Test",Marital Status: Married,$200.00,2022-11-04T00:00:00,$50.00
+6339,Person,Allen,Valentine,,2022-10-15T00:00:00,mckaylinda@hotmail.com,,,"Major Donor, Student Scholar",Job Title: Operations Manager; Marital Status: Single,$1500.00,2022-07-24T00:00:00,$1000.00
+6366,Person,julie,mcgrath,,2020-09-13T00:00:00,bjones@hotmail.com,xavierwhite@arnold-taylor.net,Mrs.,"Major Donor, Student Scholar, Summer 2016",Job Title: Sales Executive,$6000.00,2023-03-27T00:00:00,$500.00
 6522,Person,Brian,Schmidt,,2019-10-01T00:00:00,andrea62@gmail.com,gpayne@hotmail.com,,Student Scholar,,$1100.00,2023-03-13T00:00:00,$500.00
-6523,Person,Michele,Burton,,2016-12-31T00:00:00,browneric@patton.biz,,Mr.,"Camp 2016, Major Donor 2021, Top Donor",,,,
+6523,Person,Michele,Burton,,2016-12-31T00:00:00,browneric@patton.biz,,Mr.,"Major Donor, Summer 2016",,,,
 6586,Person,Margaret,Moore,,2016-08-01T00:00:00,rubenwelch@yahoo.com,kevinmoore@jackson.com,,,,$3500.00,2022-12-01T00:00:00,$3000.00
-6605,Person,James,Trujillo,,2023-06-28T00:00:00,wesleyjones@gibson.com,jamesharrison@ray-sherman.com,Mrs.,"Camp 2016, Pitch Perfect Staff, Summer School 2016, Top Donor",,$1250.00,2021-10-14T00:00:00,$250.00
-6801,Person,Troy,Perez,,2016-10-03T00:00:00,thomaswelch@adams-castillo.com,james92@hotmail.com,,"Camp 2016, Pitch Perfect Staff, Summer School 2016",Job Title: Marketing Manager,$1100.00,2018-07-26T00:00:00,$1000.00
-6816,Person,Jennifer,Hancock,,,kharris@yahoo.com,calhouneric@yahoo.com,Mr.,"Pitch Perfect Staff, Summer School 2016, Top Donor",Job Title: UX Designer; Marital Status: Single,$5000.00,2019-11-04T00:00:00,$5000.00
-6822,Person,Nicole,Benson,,2022-10-30T00:00:00,,,,"Board Member, Student Scholar, Top Donor",Job Title: UX Designer; Marital Status: Single,$10200.00,2023-05-14T00:00:00,$100.00
-6846,Person,James,Nichols,,2022-02-04T00:00:00,andreahines@yahoo.com,courtneychang@hotmail.com,,"Major Donor 2021, Summer School 2016, Top Donor",,$100.00,2020-03-11T00:00:00,$100.00
-7022,Person,Melissa,Harrison,,2019-08-30T00:00:00,ujackson@reed-perez.com,mmckinney@yahoo.com,,Major Donor 2021,Job Title: Accountant; Marital Status: Single,$5250.00,2024-09-19T00:00:00,$250.00
-7040,Person,Patrick,Woods,,2022-04-19T00:00:00,vanessa45@yaho.com,,,Summer School 2016,,$100.00,2024-07-25T00:00:00,$100.00
-7103,Company,,,"Cross, Hutchinson and Vega",2023-07-30T00:00:00,michellelane@cox.com,garystevens@yaho.com,,"Board Member, Pitch Perfect Volunteer, Student Scholar, Summer School 2016, VIP",Job Title: Accountant; Marital Status: Single,$1500.00,2024-08-15T00:00:00,$1000.00
-7358,Person,Amanda,James,,2016-05-11T00:00:00,,,,"Camp 2016, Pitch Perfect Staff, Summer School 2016",Job Title: Graphic Designer,$1100.00,2022-01-24T00:00:00,$1000.00
-7369,Person,Dawn,Lindsey,,2024-03-28T00:00:00,jacob66@yahoo.com,snydertanya@smith.biz,Ms.,"Board Member, Major Donor 2021, Pitch Perfect Volunteer, Top Donor",Job Title: Administrative Assistant,$3200.00,2024-04-19T00:00:00,$100.00
-7497,Person,Jennifer,Luna,,2019-02-09T09:30:00,robertmunoz@hotmail.com,,Dr.,"Camp 2016, Summer School 2016",,$4050.00,2020-10-31T00:00:00,$1000.00
+6605,Person,James,Trujillo,,2023-06-28T00:00:00,wesleyjones@gibson.com,jamesharrison@ray-sherman.com,Mrs.,"Major Donor, Pitch Perfect, Summer 2016",,$1250.00,2021-10-14T00:00:00,$250.00
+6801,Person,Troy,Perez,,2016-10-03T00:00:00,thomaswelch@adams-castillo.com,james92@hotmail.com,,"Pitch Perfect, Summer 2016",Job Title: Marketing Manager,$1100.00,2018-07-26T00:00:00,$1000.00
+6816,Person,Jennifer,Hancock,,,kharris@yahoo.com,calhouneric@yahoo.com,Mr.,"Major Donor, Pitch Perfect, Summer 2016",Job Title: UX Designer; Marital Status: Single,$5000.00,2019-11-04T00:00:00,$5000.00
+6822,Person,Nicole,Benson,,2022-10-30T00:00:00,,,,"Board Member, Major Donor, Student Scholar",Job Title: UX Designer; Marital Status: Single,$10200.00,2023-05-14T00:00:00,$100.00
+6846,Person,James,Nichols,,2022-02-04T00:00:00,andreahines@yahoo.com,courtneychang@hotmail.com,,"Major Donor, Summer 2016",,$100.00,2020-03-11T00:00:00,$100.00
+7022,Person,Melissa,Harrison,,2019-08-30T00:00:00,ujackson@reed-perez.com,mmckinney@yahoo.com,,Major Donor,Job Title: Accountant; Marital Status: Single,$5250.00,2024-09-19T00:00:00,$250.00
+7040,Person,Patrick,Woods,,2022-04-19T00:00:00,vanessa45@yaho.com,,,Summer 2016,,$100.00,2024-07-25T00:00:00,$100.00
+7103,Company,,,"Cross, Hutchinson and Vega",2023-07-30T00:00:00,michellelane@cox.com,garystevens@yaho.com,,"Board Member, Pitch Perfect, Student Scholar, Summer 2016, VIP",Job Title: Accountant; Marital Status: Single,$1500.00,2024-08-15T00:00:00,$1000.00
+7358,Person,Amanda,James,,2016-05-11T00:00:00,,,,"Pitch Perfect, Summer 2016",Job Title: Graphic Designer,$1000.00,2022-01-24T00:00:00,$1000.00
+7369,Person,Dawn,Lindsey,,2024-03-28T00:00:00,jacob66@yahoo.com,snydertanya@smith.biz,Ms.,"Board Member, Major Donor, Pitch Perfect",Job Title: Administrative Assistant,$3200.00,2024-04-19T00:00:00,$100.00
+7497,Person,Jennifer,Luna,,2019-02-09T09:30:00,robertmunoz@hotmail.com,,Dr.,Summer 2016,,$4050.00,2020-10-31T00:00:00,$1000.00
 7564,Company,,,Dodson-Austin,2017-09-23T00:00:00,yolson@gmaill.com,,Mrs.,,Marital Status: Married,$600.00,2022-07-29T00:00:00,$100.00
-7963,Person,John,Stanton,,2015-04-24T00:00:00,daniel74@bryan.com,,Mrs.,"Board Member, Pitch Perfect Staff",,$9500.00,2024-02-21T00:00:00,$5000.00
+7963,Person,John,Stanton,,2015-04-24T00:00:00,daniel74@bryan.com,,Mrs.,"Board Member, Pitch Perfect",,$9500.00,2024-02-21T00:00:00,$5000.00
 8101,Person,James,Pope,,2019-05-09T00:00:00,howardcarlos@gmail.com,,Ms.,,Job Title: Sales Executive; Marital Status: Married,$4500.00,2023-04-02T00:00:00,$500.00
-8161,Person,Joshua,Gutierrez,,2021-09-19T00:00:00,dwilliams@hotmail.com,,Mr.,"Board Member, Pitch Perfect Staff, Summer School 2016, Top Donor",Job Title: Project Manager,$1550.00,2022-08-20T00:00:00,$1000.00
-8265,Person,Patricia,Curtis,,2019-09-24T00:00:00,lkelly@butler-bradford.biz,jessicaramirez@kim-clark.com,Dr.,"Camp 2016, Major Donor 2021, Pitch Perfect Staff, Top Donor",Job Title: Project Manager; Marital Status: Married,$8000.00,2019-07-06T00:00:00,$3000.00
-8308,Person,Robert,Donovan,,2021-01-20T00:00:00,jennifernorton@hotmail.com,langtanya@gmal.com,Ms.,"Pitch Perfect Staff, Pitch Perfect Volunteer",,$500.00,2020-04-27T00:00:00,$250.00
-8309,Company,,,Stephenson Ltd,2021-07-20T00:00:00,,,,"Board Member, Camp 2016",Job Title: Nurse Practitioner,$150.00,2020-11-10T00:00:00,$50.00
-8361,Person,Sarah,Franco,,,umalone@yahoo.com,daltonmichael@gmaill.com,Mrs.,Summer School 2016,Job Title: Accountant,$3300.00,2021-05-20T00:00:00,$50.00
-8548,Person,Nicholas,Cooper,,2022-09-25T00:00:00,laurenfields@yahoo.com,oserrano@hotmail.com,,"Board Member, Pitch Perfect Staff, Summer School 2016",,$6500.00,2022-01-01T00:00:00,$500.00
+8161,Person,Joshua,Gutierrez,,2021-09-19T00:00:00,dwilliams@hotmail.com,,Mr.,"Board Member, Major Donor, Pitch Perfect, Summer 2016",Job Title: Project Manager,$1550.00,2022-08-20T00:00:00,$1000.00
+8265,Person,Patricia,Curtis,,2019-09-24T00:00:00,lkelly@butler-bradford.biz,jessicaramirez@kim-clark.com,Dr.,"Major Donor, Pitch Perfect, Summer 2016",Job Title: Project Manager; Marital Status: Married,$8000.00,2019-07-06T00:00:00,$3000.00
+8308,Person,Robert,Donovan,,2021-01-20T00:00:00,jennifernorton@hotmail.com,langtanya@gmal.com,Ms.,Pitch Perfect,,$500.00,2020-04-27T00:00:00,$250.00
+8309,Company,,,Stephenson Ltd,2021-07-20T00:00:00,,,,"Board Member, Summer 2016",Job Title: Nurse Practitioner,$150.00,2020-11-10T00:00:00,$50.00
+8361,Person,Sarah,Franco,,,umalone@yahoo.com,daltonmichael@gmaill.com,Mrs.,Summer 2016,Job Title: Accountant,$3300.00,2021-05-20T00:00:00,$50.00
+8548,Person,Nicholas,Cooper,,2022-09-25T00:00:00,laurenfields@yahoo.com,oserrano@hotmail.com,,"Board Member, Pitch Perfect, Summer 2016",,$6500.00,2022-01-01T00:00:00,$500.00
 8977,Person,James,Baker,,2020-01-19T00:00:00,walkerjeremy@long.org,hfoster@yahoo.com,Dr.,Student Scholar,,,,
-9139,Person,Nicole,Chase,,2022-09-28T00:00:00,victoria52@galvan.com,adrian20@chang.com,Ms.,"Major Donor 2021, Student Scholar, Summer School 2016",Marital Status: Married,$750.00,2021-04-09T00:00:00,$500.00
-9153,Person,Erica,House,,2015-02-03T00:00:00,deantravis@russo-nelson.org,burnsamber@luna-solis.net,Mrs.,"Board Member, Major Donor 2022, Student Scholar",Marital Status: Married,$5100.00,2024-04-27T00:00:00,$5000.00
-9432,Company,,,"Green, Evans and Evans",2021-02-13T00:00:00,joshuaparker@hotmal.com,perezsarah@yahoo.com,,"Student Scholar, Summer School 2016",Job Title: Marketing Manager; Marital Status: Married,$15000.00,2019-06-20T00:00:00,$10000.00
-9655,Person,Maria,Kelley,,2018-06-30T00:00:00,christopher66@gmail.com,garciamark@parker.info,Ms.,"Major Donor 2021, Pitch Perfect Volunteer",,$200.00,2021-11-26T00:00:00,$50.00
-9734,Person,Yvonne,Russell,,2021-02-25T00:00:00,victoria10@gmal.com,hansonchristine@hotmail.com,,"Board Member, Pitch Perfect Volunteer, Summer School 2016",,$15500.00,2022-10-29T00:00:00,$500.00
-9821,Company,,,Gutierrez Group,2020-08-22T00:00:00,klinejose@gmail.com,brittanybenson@galvan.com,,"Camp 2016, Pitch Perfect Staff, Top Donor",,,,
-9827,Person,Cynthia,Vasquez,,2021-09-12T00:00:00,ryan82@yahoo.com,mark55@yahoo.com,Ms.,"Board Member, Major Donor 2021",Job Title: Business Analyst; Marital Status: Married,$1250.00,2024-12-26T00:00:00,$1000.00
-9859,Person,James,Burns,,2015-06-24T00:00:00,michael43@hall-lee.com,harperluke@gmail.com,Dr.,"Pitch Perfect Volunteer, Top Donor",Job Title: Administrative Assistant,$3050.00,2019-12-12T00:00:00,$3000.00
+9139,Person,nicole,CHASE,,2022-09-28T00:00:00,victoria52@galvan.com,adrian20@chang.com,Ms.,"Major Donor, Student Scholar, Summer 2016",Marital Status: Married,$750.00,2021-04-09T00:00:00,$500.00
+9153,Person,Erica,House,,2015-02-03T00:00:00,deantravis@russo-nelson.org,burnsamber@luna-solis.net,Mrs.,"Board Member, Major Donor 2022, Student Scholar",Marital Status: Married,$100.00,2019-12-28T00:00:00,$100.00
+9432,Company,,,"Green, Evans and Evans",2021-02-13T00:00:00,joshuaparker@hotmal.com,perezsarah@yahoo.com,,"Student Scholar, Summer 2016",Job Title: Marketing Manager; Marital Status: Married,$15000.00,2019-06-20T00:00:00,$10000.00
+9655,Person,maria,KELLEY,,2018-06-30T00:00:00,christopher66@gmail.com,garciamark@parker.info,Ms.,"Major Donor, Pitch Perfect",,$200.00,2021-11-26T00:00:00,$50.00
+9734,Person,yvonne,russell,,2021-02-25T00:00:00,victoria10@gmal.com,hansonchristine@hotmail.com,,"Board Member, Pitch Perfect, Summer 2016",,$15500.00,2022-10-29T00:00:00,$500.00
+9821,Company,,,Gutierrez Group,2020-08-22T00:00:00,klinejose@gmail.com,brittanybenson@galvan.com,,"Major Donor, Pitch Perfect, Summer 2016",,,,
+9827,Person,Cynthia,Vasquez,,2021-09-12T00:00:00,ryan82@yahoo.com,mark55@yahoo.com,Ms.,"Board Member, Major Donor",Job Title: Business Analyst; Marital Status: Married,$1250.00,2024-12-26T00:00:00,$1000.00
+9859,Person,james,BURNS,,2015-06-24T00:00:00,michael43@hall-lee.com,harperluke@gmail.com,Dr.,"Major Donor, Pitch Perfect",Job Title: Administrative Assistant,$3050.00,2019-12-12T00:00:00,$3000.00
 9965,Person,Shane,Meza,,2015-09-05T00:00:00,kelly82@solomon.info,amber39@johnson.net,,Student Scholar,Job Title: Nurse Practitioner; Marital Status: Married,$5100.00,2024-10-20T00:00:00,$5000.00

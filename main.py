@@ -30,6 +30,12 @@ def completeness_score(df):
     #counts how many non-missing cells exist per row
     return cleaned.notna().sum(axis=1)
 
+def to_iso_datetime(x):
+    dt = pd.to_datetime(x, errors="coerce")
+    if pd.isna(dt):
+        return ""
+    return dt.strftime("%Y-%m-%dT%H:%M:%S")
+
 
 def dedupe_constituents(df):
     df = df.copy()
@@ -37,6 +43,7 @@ def dedupe_constituents(df):
 
     df["_score"] = completeness_score(df)
     df["_date"] = pd.to_datetime(df["Date Entered"], errors="coerce")
+    
 
     #Sorts so the “best” row per Patron ID comes first
     df = df.sort_values(
@@ -114,6 +121,10 @@ def main():
     # Deduplicate constituents
     constituents = dedupe_constituents(constituents)
 
+    constituents["Patron ID"] = constituents["Patron ID"].astype(str).str.strip()
+    constituents = constituents.set_index("Patron ID")
+
+
     # Build email lookup
     emails["Patron ID"] = emails["Patron ID"].astype(str)
     emails["Email"] = emails["Email"].apply(as_clean_str).str.lower()
@@ -122,8 +133,10 @@ def main():
     email_map = emails.groupby("Patron ID")["Email"].apply(list).to_dict()
 
     def resolve_emails(row):
+        patron_id = str(row.name)  # Patron ID because it's the index now
+
         primary = as_clean_str(row.get("Primary Email")).lower()
-        others = email_map.get(row["Patron ID"], [])
+        others = email_map.get(patron_id, [])
 
         candidates = []
         if primary:
@@ -143,16 +156,18 @@ def main():
 
         return pd.Series([email1, email2])
 
-    constituents[["Email 1", "Email 2"]] = constituents.apply(resolve_emails, axis=1)
 
-    # Minimal output (partial, on purpose)
-    output = pd.DataFrame({
-        "CB Constituent ID": constituents["Patron ID"],
-        "CB Email 1 (Standardized)": constituents["Email 1"],
-        "CB Email 2 (Standardized)": constituents["Email 2"],
-    })
+    constituents[["Email 1", "Email 2"]] = constituents.apply(resolve_emails, axis=1)
+    
+
+    constituents["CB Email 1 (Standardized)"] = constituents["Email 1"]
+    constituents["CB Email 2 (Standardized)"] = constituents["Email 2"]
+
 
     constituents["Clean Tags"] = constituents["Tags"].apply(split_tags)
+
+    constituents["CB Created At"] = constituents["Date Entered"].apply(to_iso_datetime)
+
 
     #print(constituents[["Patron ID", "Tags", "Clean Tags"]].head(10))
 
@@ -165,12 +180,16 @@ def main():
     tag_mapping = fetch_tag_mapping()
 
     constituents["Mapped Tags"] = constituents["Clean Tags"].apply(lambda tags: map_tags(tags, tag_mapping))
+    constituents["CB Tags"] = constituents["Mapped Tags"].apply(lambda tags: ", ".join(sorted(tags)) if tags else "")
+
 
     # Create (Patron ID, Tag) rows
-    exploded = constituents[["Patron ID", "Mapped Tags"]].explode("Mapped Tags")
+    tmp = constituents.reset_index()  # brings Patron ID back as a column
+    exploded = tmp[["Patron ID", "Mapped Tags"]].explode("Mapped Tags")
     exploded = exploded.rename(columns={"Mapped Tags": "CB Tag Name"})
     exploded["CB Tag Name"] = exploded["CB Tag Name"].apply(as_clean_str)
     exploded = exploded[exploded["CB Tag Name"] != ""]
+        
 
     # Count unique patrons per tag
     tag_counts = (
@@ -179,16 +198,140 @@ def main():
         .reset_index(name="CB Tag Count")
         .sort_values("CB Tag Name")
     )
+    tag_counts.to_csv(f"{OUTPUT_DIR}/cuebox_tags.csv", index=False)
+    print("Wrote data/output/cuebox_tags.csv")
+
     donations = pd.read_excel(INPUT_PATH, sheet_name="Input Donation History")
-    print("Donation History columns:", list(donations.columns))
-    print(donations.head(3))
-    print(donations["Status"].value_counts(dropna=False))
+    # ---- Donation rollups (Paid only) ----
+    donations["Patron ID"] = donations["Patron ID"].astype(str).str.strip()
+    donations = donations[donations["Status"] == "Paid"].copy()
+
+    donations["Donation Date"] = pd.to_datetime(donations["Donation Date"], errors="coerce")
+    donations["Donation Amount"] = pd.to_numeric(donations["Donation Amount"], errors="coerce")
+
+    # Lifetime sum
+    lifetime = donations.groupby("Patron ID")["Donation Amount"].sum()
+
+    # Most recent donation per patron (max date)
+    recent = (
+        donations.dropna(subset=["Donation Date"])
+        .sort_values(["Patron ID", "Donation Date"], ascending=[True, False])
+        .drop_duplicates("Patron ID", keep="first")
+        .set_index("Patron ID")
+    )
+
+    def to_currency(x):
+        return f"${float(x):.2f}" if pd.notna(x) else ""
+
+    # Join onto constituents (constituents index is Patron ID)
+    # Lifetime donation total
+    constituents["CB Lifetime Donation Amount"] = pd.Series(
+        constituents.index.map(lifetime),
+        index=constituents.index
+    ).map(to_currency)
+
+    # Most recent donation date
+    constituents["CB Most Recent Donation Date"] = pd.Series(
+        constituents.index.map(recent["Donation Date"]),
+        index=constituents.index
+    ).map(lambda d: d.strftime("%Y-%m-%dT%H:%M:%S") if pd.notna(d) else "")
+
+    # Most recent donation amount
+    constituents["CB Most Recent Donation Amount"] = pd.Series(
+        constituents.index.map(recent["Donation Amount"]),
+        index=constituents.index
+    ).map(to_currency)
 
 
-    #tag_counts.to_csv(f"{OUTPUT_DIR}/tags_step3.csv", index=False)
-   #print("Wrote data/output/tags_step3.csv")
+    # ---- Build CB Constituent Type ----
+
+    def determine_constituent_type(row):
+        company = str(row.get("Company", "")).strip()
+        if company and company.lower() not in {"none", "nan", "n/a"}:
+            return "Company"
+        return "Person"
+
+    constituents["CB Constituent Type"] = constituents.apply(
+        determine_constituent_type,
+        axis=1
+    )
+
+    # ---- Name fields ----
+
+    constituents["CB First Name"] = constituents["First Name"].fillna("").str.strip()
+    constituents["CB Last Name"] = constituents["Last Name"].fillna("").str.strip()
+    constituents["CB Company Name"] = constituents["Company"].fillna("").str.strip()
+
+    # If Company, blank out person fields
+    constituents.loc[
+        constituents["CB Constituent Type"] == "Company",
+        ["CB First Name", "CB Last Name"]
+    ] = ""
+
+    # If Person, blank out company field
+    constituents.loc[
+        constituents["CB Constituent Type"] == "Person",
+        "CB Company Name"
+    ] = ""
+
+    # ---- CB Title ----
+    allowed_titles = {"Mr.": "Mr.", "Mr": "Mr.",
+                    "Mrs.": "Mrs.", "Mrs": "Mrs.",
+                    "Ms.": "Ms.", "Ms": "Ms.",
+                    "Dr.": "Dr.", "Dr": "Dr."}
+
+    def normalize_cb_title(x):
+        s = as_clean_str(x)
+        return allowed_titles.get(s, "")
+
+    # Prefer Salutation; fallback to Title if Salutation doesn't map
+    constituents["CB Title"] = constituents["Salutation"].apply(normalize_cb_title)
+    fallback = constituents["CB Title"] == ""
+    constituents.loc[fallback, "CB Title"] = constituents.loc[fallback, "Title"].apply(normalize_cb_title)
+
+    # ---- CB Background Information ----
+    def build_background_info(row):
+        job = as_clean_str(row.get("Title"))
+        marital = as_clean_str(row.get("Gender"))  # your data uses Gender column for Married/Single/Unknown
+
+        parts = []
+        if job:
+            parts.append(f"Job Title: {job}")
+        if marital and marital.lower() != "unknown":
+            parts.append(f"Marital Status: {marital}")
+
+        return "; ".join(parts)
+
+    constituents["CB Background Information"] = constituents.apply(build_background_info, axis=1)
+
+
+    final_constituents = pd.DataFrame({
+        "CB Constituent ID": constituents.index,
+        "CB Constituent Type": constituents["CB Constituent Type"],
+        "CB First Name": constituents["CB First Name"],
+        "CB Last Name": constituents["CB Last Name"],
+        "CB Company Name": constituents["CB Company Name"],
+        "CB Created At": constituents["CB Created At"],
+        "CB Email 1 (Standardized)": constituents["CB Email 1 (Standardized)"],
+        "CB Email 2 (Standardized)": constituents["CB Email 2 (Standardized)"],
+        "CB Title": constituents["CB Title"],
+        "CB Tags": constituents["CB Tags"],
+        "CB Background Information": constituents["CB Background Information"],
+        "CB Lifetime Donation Amount": constituents["CB Lifetime Donation Amount"],
+        "CB Most Recent Donation Date": constituents["CB Most Recent Donation Date"],
+        "CB Most Recent Donation Amount": constituents["CB Most Recent Donation Amount"],
+    })
+
+    final_constituents.to_csv(f"{OUTPUT_DIR}/cuebox_constituents.csv", index=False)
+    print("Wrote data/output/cuebox_constituents.csv")
+
+    
+
+
+
 
    
+
 
 if __name__ == "__main__":
     main()
